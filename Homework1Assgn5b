@@ -1,0 +1,46 @@
+print ("sample")
+
+s = "t56z23"
+
+digits = ""
+
+for ch in s:
+    if ch.isdigit():
+        digits = digits + ch
+print (digits)
+
+print ("sample 1")
+digits = ''
+
+for ch in s:
+    if ch == '0123456789':
+        digits = digits + ch
+print (digits)
+
+print ("sample 2")
+digits = ''
+
+for i in range(len(s)):
+    if s[i].isdigit():
+        digits = digits + s[i]
+print (digits)
+
+print ("sample 3")
+digits = ''
+
+for ch in s:
+    if ch in '0123456789':
+        digits = digits + ch
+print (digits)
+
+print ("sample 4")
+indices = []
+digits = ''
+
+for i in range(len(s)):
+    if s[i].isdigit():
+        indices.append(i)
+
+for index in indices:
+    digits = digits + s[index]
+print (digits)

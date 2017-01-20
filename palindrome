@@ -1,0 +1,8 @@
+def is_palindrome_v3(s):
+
+    j = len(s) - 1
+    for i in range(len(s) // 2):
+        if s[i] != s[j - i]:
+            return False
+
+    return True
